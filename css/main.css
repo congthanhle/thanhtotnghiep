@@ -1,149 +1,149 @@
 body {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #019ED8;
-    color: #000;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #019ed8;
+  color: #000;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .book-cover {
-    display: flex;
-    justify-content: center;
-    perspective: 1000px; /* Tạo góc nhìn 3D */
-    gap: 0;
- /* Phóng to nhẹ */
+  display: flex;
+  justify-content: center;
+  perspective: 1000px; /* Tạo góc nhìn 3D */
+  gap: 0;
+  /* Phóng to nhẹ */
 }
 
 .card {
-    background-color: #fff;
-    width: 44%;
-    padding: 30px;
-    border-radius: 15px;
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
+  background-color: #fff;
+  width: 44%;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .card2 {
-    background-color: #fff;
-    width: 44%;
-    padding: 30px;
-    border-radius: 15px;
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  background-color: #fff;
+  width: 44%;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
-.thumoi{
-    font-family: "Merriweather", serif;
-    font-weight: bold;
-    font-style: normal;
+.thumoi {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 @media (max-width: 880px) {
-    .container {
-        flex-wrap: wrap-reverse;
-    }
-    .card {
-        width: 90%;
-    }
-    .card2 {
-        width: 90%;
-    }
+  .container {
+    flex-wrap: wrap-reverse;
+  }
+  .card {
+    width: 90%;
+  }
+  .card2 {
+    width: 90%;
+  }
 }
 
 .header {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .content {
-    line-height: 1.8;
-    text-align: justify;
-    font-size: 1em;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1em;
 }
 
 .graduation {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
 }
 
 .details {
-    margin-top: 15px;
-    line-height: 1.8;
+  margin-top: 15px;
+  line-height: 1.8;
 }
 
 .line-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .line-container::before,
 .line-container::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid #000;
-    margin: 0 10px;
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+  margin: 0 10px;
 }
 
 .avatar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #019ED8; /* Màu nền xanh */
-    border-radius: 50%; /* Viền tròn */
-    padding: 10px; /* Khoảng cách giữa ảnh và viền */
-    width: 200px; /* Kích thước của container */
-    height: 200px; /* Kích thước của container */
-    margin: 0 auto; /* Căn giữa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #019ed8; /* Màu nền xanh */
+  border-radius: 50%; /* Viền tròn */
+  padding: 10px; /* Khoảng cách giữa ảnh và viền */
+  width: 200px; /* Kích thước của container */
+  height: 200px; /* Kích thước của container */
+  margin: 0 auto; /* Căn giữa */
 }
 
 .avatar {
-    border-radius: 50%; /* Viền tròn cho ảnh */
-    width: 100%; /* Đảm bảo ảnh vừa với container */
-    height: auto; /* Giữ tỉ lệ ảnh */
+  border-radius: 50%; /* Viền tròn cho ảnh */
+  width: 100%; /* Đảm bảo ảnh vừa với container */
+  height: auto; /* Giữ tỉ lệ ảnh */
 }
 
 .tilt {
-    display: inline-block;
-    animation: tilt 1s infinite alternate;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-@media (max-width: 500px) {
-    .tilt {
-        font-size: 0.9em;
-    }
+  display: inline-block;
+  animation: tilt 1s infinite alternate;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-  @keyframes tilt {
-    0% {
-      transform: rotate(-20deg);
-      color: #045876;
-    }
-    100% {
-      transform: rotate(10deg);
-    }
+@media (max-width: 500px) {
+  .tilt {
+    font-size: 0.8em;
   }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-20deg);
+    color: #045876;
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
