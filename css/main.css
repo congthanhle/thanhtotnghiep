@@ -132,6 +132,12 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+@media (max-width: 400px) {
+    .tilt {
+        font-size: 0.9em;
+    }
+}
+
   @keyframes tilt {
     0% {
       transform: rotate(-20deg);
