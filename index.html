@@ -39,7 +39,7 @@
                 <p>Ngày tốt nghiệp là một dấu ấn không thể quên trên hành trình dài rộng của mỗi chúng ta. Đó là lúc
                     nhìn lại quá khứ, là thời điểm để cảm ơn những người đã luôn đồng hành, hỗ trợ và dạy dỗ. Cảm ơn
                     gia đình, thầy cô và bạn bè đã là nguồn động lực, giúp tôi không chỉ hoàn thành con đường học vấn mà
-                    còn khám phá ra giá trị thực sự của sự nỗ lực và đam mê.</p>
+                    còn khám phá ra giá trị thực sự của sự nỗ lực và đam mê.❤️</p>
                 <p>Dù chặng đường phía trước còn dài, nhưng ngày hôm nay là một dịp để tôi tự hào và nhìn về tương lai
                     với hy vọng và niềm tin. Cảm ơn tất cả những ai đã cùng tôi đi qua những tháng ngày tuyệt vời trong
                     đại học này.🌟</p>
@@ -78,6 +78,44 @@
             </div>
         </div>
     </div>
+    <script>
+        const snowflakeCount = 100; 
+        const snowflakeCharacters = ['❄', '✻', '❅', '✼']; 
+    
+        for (let i = 0; i < snowflakeCount; i++) {
+          const snowflake = document.createElement('div');
+          snowflake.classList.add('snowflake');
+          snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
+          
+          snowflake.style.left = Math.random() * 100 + 'vw';
+          snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; 
+          snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+          snowflake.style.opacity = Math.random();
+    
+          document.body.appendChild(snowflake);
+    
+          snowflake.addEventListener('animationend', () => {
+            snowflake.remove(); // Xóa bông tuyết sau khi rơi xuống
+          });
+        }
+    
+        setInterval(() => {
+          const snowflake = document.createElement('div');
+          snowflake.classList.add('snowflake');
+          snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
+    
+          snowflake.style.left = Math.random() * 100 + 'vw';
+          snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+          snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+          snowflake.style.opacity = Math.random();
+    
+          document.body.appendChild(snowflake);
+    
+          snowflake.addEventListener('animationend', () => {
+            snowflake.remove();
+          });
+        }, 400);
+      </script>
 </body>
 
 </html>

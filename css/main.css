@@ -147,3 +147,23 @@ body {
     transform: rotate(10deg);
   }
 }
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 10px;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+}
