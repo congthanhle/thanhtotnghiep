@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,9 @@
 </head>
 
 <body>
+    <audio loop autoplay>
+        <source src="./audio/nhacgiangsinh.mp3" type="audio/mpeg">
+    </audio>
     <div class="container">
         <div class="card2">
             <div class="header">
@@ -67,50 +71,58 @@
             </div>
             <div class="details">
                 <p><strong><i class="fas fa-clock"></i> Thời gian:</strong> 11 giờ 00, ngày 28 tháng 11 năm 2024</p>
-                <p><strong><i class="fa-solid fa-location-dot"></i> Địa điểm:</strong> Hội trường A, Trường Đại học Công nghệ
+                <p><strong><i class="fa-solid fa-location-dot"></i> Địa điểm:</strong> Hội trường A, Trường Đại học Công
+                    nghệ
                     thông tin, Khu phố 6, Phường Linh Xuân, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
                 <p><strong><i class="fas fa-phone-alt"></i> Liên hệ:</strong> 0392333687</p>
             </div>
         </div>
     </div>
+    <div class="road"></div>
+    <img src="./img/santa_no_bg.gif" alt="Ông già Noel cưỡi tuần lộc" class="santa">
     <script>
-        const snowflakeCount = 50; 
-        const snowflakeCharacters = ['❄', '✻', '❅', '✼']; 
-    
+        const snowflakeCount = 50;
+        const snowflakeCharacters = ['❄', '✻', '❅', '✼'];
+
         for (let i = 0; i < snowflakeCount; i++) {
-          const snowflake = document.createElement('div');
-          snowflake.classList.add('snowflake');
-          snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
-          
-          snowflake.style.left = Math.random() * 100 + 'vw';
-          snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; 
-          snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
-          snowflake.style.opacity = Math.random();
-    
-          document.body.appendChild(snowflake);
-    
-          snowflake.addEventListener('animationend', () => {
-            snowflake.remove();
-          });
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
+
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            snowflake.style.opacity = Math.random();
+
+            document.body.appendChild(snowflake);
+
+            snowflake.addEventListener('animationend', () => {
+                snowflake.remove();
+            });
         }
-    
+
         setInterval(() => {
-          const snowflake = document.createElement('div');
-          snowflake.classList.add('snowflake');
-          snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
-    
-          snowflake.style.left = Math.random() * 100 + 'vw';
-          snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
-          snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
-          snowflake.style.opacity = Math.random();
-    
-          document.body.appendChild(snowflake);
-    
-          snowflake.addEventListener('animationend', () => {
-            snowflake.remove();
-          });
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = snowflakeCharacters[Math.floor(Math.random() * snowflakeCharacters.length)];
+
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            snowflake.style.opacity = Math.random();
+
+            document.body.appendChild(snowflake);
+
+            snowflake.addEventListener('animationend', () => {
+                snowflake.remove();
+            });
         }, 600);
-      </script>
+
+        const audio = document.querySelector('audio');
+        document.body.addEventListener('click', () => {
+            audio.play();
+        }, { once: true }); 
+    </script>
 </body>
 
 </html>
