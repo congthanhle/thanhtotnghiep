@@ -158,39 +158,41 @@ body {
         opacity: 0;
     }
 }
-.road {
+
+  .road {
     position: fixed;
-    bottom: 0px; /* Khoảng cách với đáy màn hình */
+    bottom: 0; 
     width: 100%;
-    height: 10px; /* Độ dày của đường */
-    background: #373d40; /* Màu sắc của đường */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Hiệu ứng ánh sáng */
+    height: 10px; 
+    background: #373d40; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     z-index: 10;
   }
-
-.santa {
+  .santa {
     position: fixed;
-    bottom: 0px; /* Vị trí ở chân trang */
-    left: -200px; /* Ban đầu ngoài màn hình bên trái */
-    width: 110px; /* Kích thước ông già Noel */
-    animation: santaMove 13s linear infinite; /* Hiệu ứng chạy qua lại */
+    bottom: 0; 
+    left: -200px; 
+    width: 110px; 
+    animation: santaMove 13s linear infinite; 
     z-index: 10;
   }
-
+  
   @keyframes santaMove {
     0% {
-      left: -200px;
-      transform: scaleX(1); /* Đi từ trái sang phải */
+      left: -200px; /* Bắt đầu ngoài màn hình trái */
+      transform: scaleX(1); /* Quay mặt phải */
     }
     50% {
-      left: 100vw;
-      transform: scaleX(1); /* Kết thúc ở phải màn hình */
+      left: 100vw; /* Đi hết sang phải màn hình */
+      transform: scaleX(1); /* Giữ nguyên mặt phải */
     }
     51% {
-      transform: scaleX(-1); /* Quay đầu về trái */
+      transform: scaleX(-1); /* Quay mặt trái */
     }
     100% {
-      left: -200px;
-      transform: scaleX(-1); /* Trở lại trái màn hình */
+      left: -200px; /* Quay lại điểm xuất phát */
+      transform: scaleX(-1); /* Đi sang trái */
     }
   }
+  
+
