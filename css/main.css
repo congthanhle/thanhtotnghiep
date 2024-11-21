@@ -13,16 +13,7 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-
   gap: 20px;
-}
-
-.book-cover {
-  display: flex;
-  justify-content: center;
-  perspective: 1000px; /* Tạo góc nhìn 3D */
-  gap: 0;
-  /* Phóng to nhẹ */
 }
 
 .card {
@@ -111,18 +102,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #019ed8; /* Màu nền xanh */
-  border-radius: 50%; /* Viền tròn */
-  padding: 10px; /* Khoảng cách giữa ảnh và viền */
-  width: 200px; /* Kích thước của container */
-  height: 200px; /* Kích thước của container */
-  margin: 0 auto; /* Căn giữa */
+  background-color: #019ed8;
+  border-radius: 50%
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; 
 }
 
 .avatar {
-  border-radius: 50%; /* Viền tròn cho ảnh */
-  width: 100%; /* Đảm bảo ảnh vừa với container */
-  height: auto; /* Giữ tỉ lệ ảnh */
+  border-radius: 50%; 
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
 }
 
 .tilt {
