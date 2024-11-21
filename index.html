@@ -79,7 +79,7 @@
         </div>
     </div>
     <script>
-        const snowflakeCount = 100; 
+        const snowflakeCount = 50; 
         const snowflakeCharacters = ['❄', '✻', '❅', '✼']; 
     
         for (let i = 0; i < snowflakeCount; i++) {
@@ -95,7 +95,7 @@
           document.body.appendChild(snowflake);
     
           snowflake.addEventListener('animationend', () => {
-            snowflake.remove(); // Xóa bông tuyết sau khi rơi xuống
+            snowflake.remove();
           });
         }
     
@@ -114,7 +114,7 @@
           snowflake.addEventListener('animationend', () => {
             snowflake.remove();
           });
-        }, 400);
+        }, 600);
       </script>
 </body>
 
